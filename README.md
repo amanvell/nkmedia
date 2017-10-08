@@ -25,7 +25,7 @@ See the [User Guide](doc/index.md#user-guide) for a more detailed explanation of
 * [MCU](https://webrtcglossary.com/mcu/) based multi audio/video conferences
 * [SFU](https://webrtcglossary.com/sfu/) (or mixed SFU+MCU) WebRTC distribution.
 * Recording (with or without transcoding).
-* Abstract API, independant of every specific backend.
+* Abstract API, independent of every specific backend.
 * Downloads, installs and monitors automatically instances of Janus, Freeswitch and Kurento, using [Docker](https://www.docker.com) containers.
 * Supports thousands of simultaneous connections, with WebRTC and SIP.
 * Robust and highly scalable, using all available processor cores automatically.
@@ -34,9 +34,9 @@ See the [User Guide](doc/index.md#user-guide) for a more detailed explanation of
 * Security-sensitive architecture. The backends do not expose any management port, only RTP traffic.
 
 ## Current Backends
-* [**nkmedia_janus**](doc/janus.md): Janus backend with support for webrtc echo, calls through the server, SFUs and SIP (in and out) gateways. Also dyamic muting of audio and video, bandwith control and recording.
+* [**nkmedia_janus**](doc/janus.md): Janus backend with support for webrtc echo, calls through the server, SFUs and SIP (in and out) gateways. Also dynamic muting of audio and video, bandwidth control and recording.
 * [**nkmedia_fs**](doc/fs.md): Freeswitch backend with support for echo, calls through the server, MCUs and and SIP (in and out) gateways. SIP calls can participate in MCU sessions or be connected to webrtc endpoints.
-* [**nkmedia_kms**](doc/kms.md): Kurento backend with support for echo, calls through the server, SFUs and and SIP (in and out) gateways. SIP calls can participate in SFU sessions or be connected to webrtc endpoints. State of the art recording support, inmediately playable and seekable.
+* [**nkmedia_kms**](doc/kms.md): Kurento backend with support for echo, calls through the server, SFUs and and SIP (in and out) gateways. SIP calls can participate in SFU sessions or be connected to webrtc endpoints. State of the art recording support, immediately playable and seekable.
 
 In the [future](doc/roadmap.md), NkMEDIA will add support for:
 * Multi-node configurations based on [NetComposer](http://www.slideshare.net/carlosjgf/net-composer-v2).
